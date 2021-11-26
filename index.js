@@ -20,7 +20,7 @@ function executeSQL(statement) {
         "Content-Length": form.getLengthSync(),
       },
     }).post(url, form).then((resp) => {
-      const html = `${resp.data}`;
+      const html = resp.data;
       const { document } = (new JSDOM(html)).window;
       const table = document.querySelectorAll("table")[0];
       const columns = table.querySelectorAll("thead th");
