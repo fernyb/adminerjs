@@ -1,0 +1,19 @@
+{
+  "name": "adminerjs",
+  "version": "1.0.0",
+  "description": "sqlwire",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "form-data": "^4.0.0",
+    "jsdom": "^18.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  }
+}
